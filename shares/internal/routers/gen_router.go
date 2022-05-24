@@ -5,7 +5,7 @@ import (
 )
 
 func init() {
-	ginrpc.SetVersion(1640864803)
+	ginrpc.SetVersion(1653301198)
 	ginrpc.AddGenOne("Weixin.GetQrcode", "weixin.get_qrcode", []string{"post"})
 	ginrpc.AddGenOne("Weixin.GetUserInfo", "weixin.get_user_info", []string{"post"})
 	ginrpc.AddGenOne("Weixin.Oauth", "weixin.oauth", []string{"post"})

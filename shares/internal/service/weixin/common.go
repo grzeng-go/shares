@@ -22,7 +22,7 @@ import (
 var _wx wx.WxTools
 
 func init() {
-	info := config.GetWxInfo()
+	/*info := config.GetWxInfo()
 	t, err := wx.New(wx.WxInfo{
 		AppID:     info.AppID,
 		AppSecret: info.AppSecret,
@@ -34,7 +34,7 @@ func init() {
 	if err != nil {
 		mylog.Fatal(err)
 	}
-	_wx = t
+	_wx = t*/
 }
 
 //生成sessionId

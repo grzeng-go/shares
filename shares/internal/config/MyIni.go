@@ -7,7 +7,7 @@ import (
 // Config custom config struct
 type Config struct {
 	CfgBase     `yaml:"base"`
-	MySQLInfo   MysqlDbInfo `yaml:"db_info"`
+	MySQLInfo   MysqlDbInfo `yaml:"mysql_info"`
 	EtcdInfo    EtcdInfo    `yaml:"etcd_info"`
 	RedisDbInfo RedisDbInfo `yaml:"redis_info"`
 	Oauth2Url   string      `yaml:"oauth2_url"`

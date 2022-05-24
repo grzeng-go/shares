@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"os"
-
 	"shares/internal/config"
 	"shares/internal/routers"
 
@@ -56,6 +55,52 @@ func CallBack() {
 	}
 	fmt.Println("done")
 }
+
+/*func init() {
+	core.Dao.GetDBr().DB.AutoMigrate(&model.AnalyCdTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.AnalyDbszxTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.AnalyDwflTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.AnalyFlTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.AnalyHpTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.AnalyHyTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.AnalyLhbTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.AnalyTkTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.AnalyUpTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.APITbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.BillRefundTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.BillTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.BsRapidlyTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.GroupListTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.GroupTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.GroupWatchTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.HyDailyTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.HyInfoTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.HyUpTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.LhbDailyTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.LogTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.MaCdTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.MaFlTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.MaLhbTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.MaUpTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.MsgRapidlyTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.MsgTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.MyselfTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.NoPegTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.NoTdxTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.NoTradingDayTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.SharesDailyTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.SharesInfoTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.SharesWatchTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.TdxDailyTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.TencentTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.TkTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.WxMsgTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.WxUserinfo{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.XqMsgDailyActiveTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.XqMsgDailyTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.XqMsgTbl{})
+	core.Dao.GetDBr().DB.AutoMigrate(&model.ZljlrDailyTbl{})
+}*/
 
 func main() {
 	if config.GetIsDev() || len(os.Args) == 0 {
